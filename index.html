@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="or">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ମାନସାଙ୍କ ଗଣିତ - ଚତୁର୍ଥ ଶ୍ରେଣୀ, ଅଧ୍ୟାୟ ୧ ରୁ ୫ - ପୂର୍ବ ପ୍ରସ୍ତୁତି, ଯୋଗ ଓ ବିୟୋଗ, ଗୁଣନ, ଭଗ କ୍ରିୟା, ହରଣ ଶିଖିବା, ଗୁଣିତକ ଓ ଗୁଣନୀୟକ">
+<meta name="keywords" content="ମାନସାଙ୍କ, ଗଣିତ, ଚତୁର୍ଥ ଶ୍ରେଣୀ, Odia Math, Class 4, LearnOdisha">
+<meta name="author" content="LearnOdisha">
+<meta property="og:title" content="ମାନସାଙ୍କ - ଚତୁର୍ଥ ଶ୍ରେଣୀ | ଅଧ୍ୟାୟ ୧–୫">
+<meta property="og:description" content="ଓଡ଼ିଆ ମାଧ୍ୟମ ଗଣିତ ଅଭ୍ୟାସ - ୪ର୍ଥ ଶ୍ରେଣୀ">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://learnodishahelp-cmd.github.io/Quizmaster4/">
+<title>ମାନସାଙ୍କ - ଚତୁର୍ଥ ଶ୍ରେଣୀ | ଅଧ୍ୟାୟ ୧–୫</title>
+<link rel="canonical" href="https://learnodishahelp-cmd.github.io/Quizmaster4/">
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Oriya:wght@400;600;700&family=Noto+Serif+Oriya:wght@400;700&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --orange: #E06B20;
+    --orange-dark: #B54E10;
+    --orange-light: #FDF0E6;
+    --orange-mid: #F5A563;
+    --teal: #0F7B6C;
+    --teal-light: #E1F5EE;
+    --teal-mid: #1D9E75;
+    --bg: #FDFAF5;
+    --card: #FFFFFF;
+    --text: #1E1A14;
+    --text-muted: #6B5E4A;
+    --border: #E8DDD0;
+    --radius: 14px;
+    --radius-sm: 8px;
+    --shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Noto Sans Oriya', 'Noto Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+
+  /* ── HEADER ── */
+  .site-header {
+    background: linear-gradient(135deg, #B54E10 0%, #E06B20 50%, #F5A563 100%);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 16px rgba(180,78,16,0.3);
+  }
+
+  .header-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 14px 16px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+  }
+
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+  }
+
+  .header-title {
+    color: #fff;
+  }
+
+  .header-title h1 {
+    font-family: 'Noto Serif Oriya', serif;
+    font-size: clamp(15px, 4vw, 20px);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.3px;
+  }
+
+  .header-title .subtitle {
+    font-size: 12px;
+    color: rgba(255,255,255,0.85);
+    font-weight: 400;
+  }
+
+  .share-btn {
+    background: rgba(255,255,255,0.18);
+    border: 1.5px solid rgba(255,255,255,0.4);
+    color: #fff;
+    border-radius: 10px;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-family: 'Noto Sans Oriya', sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background 0.2s, transform 0.15s;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .share-btn:hover { background: rgba(255,255,255,0.28); transform: scale(1.03); }
+  .share-btn:active { transform: scale(0.97); }
+
+  .share-icon { font-size: 15px; }
+
+  /* ── CHAPTER BADGE ── */
+  .chapter-badge-wrap {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px 16px 0;
+  }
+
+  .chapter-badge {
+    background: var(--teal-light);
+    border: 1.5px solid var(--teal-mid);
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-size: 13px;
+    color: var(--teal);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* ── TAB NAV ── */
+  .tabs-container {
+    max-width: 800px;
+    margin: 14px auto 0;
+    padding: 0 12px;
+  }
+
+  .tabs-scroll {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .tabs-scroll::-webkit-scrollbar { display: none; }
+
+  .tab-btn {
+    background: var(--card);
+    border: 1.5px solid var(--border);
+    border-radius: 30px;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-family: 'Noto Sans Oriya', sans-serif;
+    color: var(--text-muted);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.22s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+    font-weight: 400;
+  }
+
+  .tab-btn .tab-num {
+    background: var(--border);
+    color: var(--text-muted);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transition: all 0.22s;
+  }
+
+  .tab-btn:hover {
+    border-color: var(--orange-mid);
+    color: var(--orange-dark);
+    background: var(--orange-light);
+  }
+
+  .tab-btn.active {
+    background: var(--orange);
+    border-color: var(--orange);
+    color: #fff;
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(224,107,32,0.35);
+  }
+
+  .tab-btn.active .tab-num {
+    background: rgba(255,255,255,0.25);
+    color: #fff;
+  }
+
+  /* ── IFRAME WRAPPER ── */
+  .frame-wrap {
+    max-width: 800px;
+    margin: 14px auto 0;
+    padding: 0 12px 24px;
+  }
+
+  .frame-card {
+    background: var(--card);
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+
+  .frame-topbar {
+    background: var(--orange-light);
+    border-bottom: 1.5px solid var(--border);
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .frame-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--orange-dark);
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .open-link-btn {
+    background: var(--orange);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-family: 'Noto Sans Oriya', sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.2s;
+    text-decoration: none;
+  }
+
+  .open-link-btn:hover { background: var(--orange-dark); }
+
+  .iframe-container {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    min-height: 400px;
+    max-height: 680px;
+  }
+
+  .content-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+  }
+
+  .iframe-loader {
+    position: absolute;
+    inset: 0;
+    background: var(--card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    z-index: 2;
+    pointer-events: none;
+    transition: opacity 0.4s;
+  }
+
+  .iframe-loader.hidden { opacity: 0; pointer-events: none; }
+
+  .spinner {
+    width: 38px;
+    height: 38px;
+    border: 3px solid var(--border);
+    border-top-color: var(--orange);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .loader-text {
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+
+  /* ── TOAST ── */
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(80px);
+    background: #1E1A14;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 13px;
+    white-space: nowrap;
+    z-index: 9999;
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    text-align: center;
+    padding: 16px;
+    font-size: 12px;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 480px) {
+    .header-inner { padding: 12px 12px 10px; }
+    .share-btn span.share-label { display: none; }
+    .tabs-container { padding: 0 8px; }
+    .frame-wrap { padding: 0 8px 20px; }
+    .iframe-container { height: 65vh; }
+  }
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "ମାନସାଙ୍କ - ଚତୁର୍ଥ ଶ୍ରେଣୀ",
+  "description": "ଓଡ଼ିଆ ମାଧ୍ୟମ ଗଣିତ ଅଧ୍ୟାୟ ୧ ରୁ ୫",
+  "url": "https://learnodishahelp-cmd.github.io/Quizmaster4/"
+}
+</script>
+</head>
+<body>
+
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="#" class="header-logo" aria-label="ମାନସାଙ୍କ ଗୃହ">
+      <div class="logo-icon" aria-hidden="true">📐</div>
+      <div class="header-title">
+        <h1>ମାନସାଙ୍କ</h1>
+        <p class="subtitle">ଚତୁର୍ଥ ଶ୍ରେଣୀ · ଅଧ୍ୟାୟ ୧–୫</p>
+      </div>
+    </a>
+    <button class="share-btn" onclick="shareApp()" aria-label="ଆପ ଶେୟାର କରନ୍ତୁ">
+      <span class="share-icon" aria-hidden="true">🔗</span>
+      <span class="share-label">ଶେୟାର</span>
+    </button>
+  </div>
+</header>
+
+<main role="main">
+  <div class="chapter-badge-wrap">
+    <div class="chapter-badge">
+      <span aria-hidden="true">📚</span>
+      ଅଧ୍ୟାୟ ୧ ରୁ ୫ — ଟ୍ୟାବ୍ ବାଛି ଅଭ୍ୟାସ ଆରମ୍ଭ କରନ୍ତୁ
+    </div>
+  </div>
+
+  <nav class="tabs-container" role="navigation" aria-label="ଅଧ୍ୟାୟ ଟ୍ୟାବ">
+    <div class="tabs-scroll" role="tablist">
+      <!-- Tabs injected by JS -->
+    </div>
+  </nav>
+
+  <div class="frame-wrap">
+    <div class="frame-card">
+      <div class="frame-topbar">
+        <div class="frame-title" id="frame-title-display">
+          <span aria-hidden="true">🔢</span>
+          <span id="active-label">ପୂର୍ବ ପ୍ରସ୍ତୁତି ଆଲୋଚନା</span>
+        </div>
+        <a class="open-link-btn" id="open-external" href="#" target="_blank" rel="noopener" aria-label="ନୂଆ ଟ୍ୟାବ୍‌ରେ ଖୋଲନ୍ତୁ">
+          <span aria-hidden="true">↗</span> ଖୋଲନ୍ତୁ
+        </a>
+      </div>
+      <div class="iframe-container">
+        <div class="iframe-loader" id="iframe-loader">
+          <div class="spinner"></div>
+          <p class="loader-text">ଲୋଡ ହେଉଛି…</p>
+        </div>
+        <iframe
+          id="content-frame"
+          class="content-iframe"
+          src="about:blank"
+          title="ଶୈକ୍ଷିକ ବିଷୟ"
+          loading="lazy"
+          allowfullscreen
+          sandbox="allow-scripts allow-same-origin allow-forms allow-popups">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© LearnOdisha · ଓଡ଼ିଆ ମାଧ୍ୟମ ଶିକ୍ଷା</p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const TABS = [
+  { label: "ପୂର୍ବ ପ୍ରସ୍ତୁତି ଆଲୋଚନା", ch: "୧", icon: "📖", url: "https://learnodishahelp-cmd.github.io/manasanka4-7/" },
+  { label: "ଯୋଗ ଓ ବିୟୋଗ",           ch: "୨", icon: "➕", url: "https://learnodishahelp-cmd.github.io/manasanka4-2/" },
+  { label: "ଗୁଣନ",                   ch: "୩", icon: "✖️", url: "https://learnodishahelp-cmd.github.io/manasanka4-3/" },
+  { label: "ଭଗ କ୍ରିୟା",              ch: "୪", icon: "➗", url: "https://learnodishahelp-cmd.github.io/mansanka4-4/" },
+  { label: "ହରଣ ଶିଖିବା",             ch: "୫", icon: "🔢", url: "https://learnodishahelp-cmd.github.io/manasanka4-6/" },
+  { label: "ଗୁଣିତକ ଓ ଗୁଣନୀୟକ",      ch: "✦", icon: "🌟", url: "https://learnodishahelp-cmd.github.io/manasanka4-5/" }
+];
+
+const SHARE_URL = "https://learnodishahelp-cmd.github.io/Quizmaster4/";
+
+let activeIdx = 0;
+const scrollEl   = document.querySelector('.tabs-scroll');
+const iframe     = document.getElementById('content-frame');
+const loader     = document.getElementById('iframe-loader');
+const activeLabel = document.getElementById('active-label');
+const openExt    = document.getElementById('open-external');
+
+function buildTabs() {
+  TABS.forEach((t, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'tab-btn' + (i === 0 ? ' active' : '');
+    btn.setAttribute('role', 'tab');
+    btn.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
+    btn.setAttribute('aria-label', t.label);
+    btn.innerHTML = `<span class="tab-num">${t.ch}</span>${t.label}`;
+    btn.addEventListener('click', () => switchTab(i));
+    scrollEl.appendChild(btn);
+  });
+}
+
+function switchTab(idx) {
+  if (idx === activeIdx) return;
+  activeIdx = idx;
+  const tabs = scrollEl.querySelectorAll('.tab-btn');
+  tabs.forEach((b, i) => {
+    b.classList.toggle('active', i === idx);
+    b.setAttribute('aria-selected', i === idx ? 'true' : 'false');
+  });
+  loadFrame(TABS[idx]);
+  tabs[idx].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+}
+
+function loadFrame(tab) {
+  loader.classList.remove('hidden');
+  loader.style.opacity = '1';
+  iframe.src = 'about:blank';
+  activeLabel.textContent = tab.label;
+  openExt.href = tab.url;
+  openExt.setAttribute('aria-label', tab.label + ' — ନୂଆ ଟ୍ୟାବ୍‌ରେ ଖୋଲନ୍ତୁ');
+  setTimeout(() => {
+    iframe.src = tab.url;
+  }, 120);
+}
+
+iframe.addEventListener('load', () => {
+  if (iframe.src === 'about:blank') return;
+  loader.style.opacity = '0';
+  setTimeout(() => loader.classList.add('hidden'), 400);
+});
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2800);
+}
+
+function shareApp() {
+  if (navigator.share) {
+    navigator.share({
+      title: 'ମାନସାଙ୍କ – ଚତୁର୍ଥ ଶ୍ରେଣୀ ଗଣିତ',
+      text: 'ଓଡ଼ିଆ ଗଣିତ ଅଭ୍ୟାସ — ଅଧ୍ୟାୟ ୧ ରୁ ୫',
+      url: SHARE_URL
+    }).catch(() => {});
+  } else {
+    navigator.clipboard.writeText(SHARE_URL).then(() => {
+      showToast('🔗 ଲିଙ୍କ କପି ହୋଇଗଲା!');
+    }).catch(() => {
+      showToast('ଲିଙ୍କ: ' + SHARE_URL);
+    });
+  }
+}
+
+buildTabs();
+loadFrame(TABS[0]);
+</script>
+</body>
+</html>
